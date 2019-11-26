@@ -31,12 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.global-wrapper{
+.page{
 	overflow: hidden;
-}
-
-header {
-	position: relative;
 }
 
 .header{
@@ -163,6 +159,7 @@ header {
 .menu__item
 {
 	display: inline-block;
+	width: 100%;
 	vertical-align: bottom;
 	margin: 0px 15px;
 	position: relative;
@@ -515,10 +512,6 @@ header {
 
 }
 
-.work__img {
-	margin-bottom: 15px;
-}
-
 .work__text {
 	color: #fff;
 	font-size: 16px;
@@ -557,10 +550,18 @@ header {
 .works__img-wrap{
 	padding: 15px 15px;
 	max-width: 540px;
-	width: 50%;
+	width: 100%;
 }
 
-.works__img-wrap img{
+.works__img-wrap:nth-child(odd){
+	margin-left: 0;
+}
+
+.works__img-wrap:nth-child(even){
+	margin-right: 0;
+}
+
+.works__photo{
 	display: block;
 	width: 100%;
     height: 100%;
@@ -873,15 +874,15 @@ form{
 	        flex-direction: column;
 }
 
-.name__input {
+#name__input {
 	display: block;
 	width: 100%;
 	padding: 1em;
 }
-.name__input[placeholder],
-.email__input[placeholder],
-.phone__input[placeholder],
-.message__input[placeholder]{
+#name__input[placeholder],
+#email__input[placeholder],
+#phone__input[placeholder],
+#message__input[placeholder]{
 	opacity: 0.6;
 	color: #ffffff;
 	font-family: 'Lato', sans-serif;
@@ -897,21 +898,21 @@ form{
 	
 }
 
-.name__input:focus,
-.email__input:focus,
-.phone__input:focus,
-.message__input:focus{
+#name__input:focus,
+#email__input:focus,
+#phone__input:focus,
+#message__input:focus{
 	color: #fff;
 }
 
-.email__input,
-.phone__input {
+#email__input,
+#phone__input {
 	display: block;
 	width: 100%;
 	padding: 1em;
 }
 
-.message__input{
+#message__input{
 	width: 100%;
     height: 140px;
     padding: 1em;
@@ -919,7 +920,7 @@ form{
     overflow: auto;
 }
 
-.contacts__submit {
+#contacts__submit {
 	width: 202px;
 	height: 46px;
 	padding: 10px 0;
@@ -952,12 +953,12 @@ form{
 	border .1s linear;
 }
 
-.contacts__submit:hover{
+#contacts__submit:hover{
 	background-color: #DBD1FF;
 	color: #1a0c47;
 }
 
-.contacts__submit:active{
+#contacts__submit:active{
 	background-color: #fff;
 	color: #1a0c47;
 	-webkit-box-shadow: 0px 0px 10px 0 #1a0c47 inset;
@@ -1115,16 +1116,13 @@ form{
 	        justify-content: space-between;
 }
 
-.social a{
-	margin-right: 15px;
-}
-
 .sprite {
     background-image: url(../images/social/spritesheet.png);
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
     background-repeat: no-repeat;
     display: block;
+    margin-right: 15px;
 }
 
 .sprite:hover{
@@ -1155,6 +1153,7 @@ form{
     background-position: 0 -53px;
 }
 
+
 /* Copyright */
 
 .copyright{
@@ -1169,20 +1168,18 @@ form{
 	background-color: #fff;
 }
 
-/* Slick */
 
-.slick-dots li.slick-active button:before {
-	color: #fff;
+
+
+
+
+
+
+
+
+@media (max-width: 1240px){
+
 }
-
-.slick-list {
-	margin-bottom: 50px;
-}
-
-.slick-dotted.slick-slider {
-	margin-bottom: 20px;
-}
-
 
 @media (max-width: 1110px) {
 	.header-inner {
@@ -1197,7 +1194,7 @@ form{
 	
 }
 
-@media screen and (max-width: 1024px){
+@media (max-width: 1024px){
 	/* Container */
 	.container {
 		max-width: 920px;
@@ -1325,15 +1322,15 @@ form{
 	}
 
 	/* Footer */
+v
 
 	.footer__logo {
-		font-size: 14px;
-		margin-right: 0;
+		font-size: 18px;
+		margin-right: 35px;
 	}
 
 	.footer__nav-link {
 		font-size: 13px;
-		margin: 0 8px;
 	}
 
 	.social {
@@ -1456,7 +1453,6 @@ form{
 	.works__img-wrap {
 		padding: 10px 0;
 		max-width: none;
-		width: 100%;
 	}
 
 	.container.our_works {
@@ -1555,10 +1551,10 @@ form{
 		padding: 40px;
 
 	}
-
 	.footer__logo {
 		margin-right: 0;
 		margin-bottom: 20px;
+		font-size: 16px;
 	}
 
 	.footer__nav__list {
