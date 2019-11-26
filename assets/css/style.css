@@ -550,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
 .works__img-wrap{
 	padding: 15px 15px;
 	max-width: 540px;
-	width: 100%;
+	width: 50%;
 }
 
 .works__img-wrap:nth-child(odd){
@@ -1453,6 +1453,7 @@ v
 	.works__img-wrap {
 		padding: 10px 0;
 		max-width: none;
+		width: 100%;
 	}
 
 	.container.our_works {
