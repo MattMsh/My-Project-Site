@@ -3,42 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
-  <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
   <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Sky Realestate</title>
 </head>
 <body>
 
 
 
-<header class="header">
-  <div class="container">
-    <div class="header-inner">
-      <div class="header-logo">
-        <a class="logo__link" href="#intro">sky realestate</a>
-      </div>
-      <div class="header__menu">
-        <a class="menu-btn" href="#">
-          <span></span>
-        </a>
-        <ul class="menu__box">
-          <li><a class="menu__item" href="#about">About us</a></li>
-          <li><a class="menu__item" href="#process">Process</a></li>
-          <li><a class="menu__item" href="#works">Our works</a></li>
-          <li><a class="menu__item" href="#reviews">Reviews</a></li>
-          <li><a class="menu__item" href="#clients">Clients</a></li>
-          <li><a class="menu__item" href="#contacts">Contacts</a></li>
-        </ul>
-      <a class="phone-link" href="tel:+380679009922">+38 (067) 900-99-22</a>
+<header>
+  <div class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a class="logo__link" href="https://matthew4jesus.github.io/My-Project-Site/">sky realestate</a>
+        </div>
+        <div class="header__menu">
+          <a class="menu-btn" href="#">
+            <span></span>
+          </a>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#about">About us</a></li>
+            <li><a class="menu__item" href="#process">Process</a></li>
+            <li><a class="menu__item" href="#works">Our works</a></li>
+            <li><a class="menu__item" href="#reviews">Reviews</a></li>
+            <li><a class="menu__item" href="#clients">Clients</a></li>
+            <li><a class="menu__item" href="#contacts">Contacts</a></li>
+          </ul>
+        <a class="phone-link" href="tel:+380679009922">+38 (067) 900-99-22</a>
+        </div>
       </div>
     </div>
   </div>
 </header>
-    <div class="page">
+    <div class="global-wrapper">
       <div class="intro__layout">
         <div class="intro__layout_2" style="background-image: url(assets/images/intro.png);"></div>
           <div class="intro" id="intro">
@@ -85,8 +87,10 @@
                 <div class="work__inner">
                   <div class="normalize"></div>
                   <div class="work__wrap">
-                    <img class="work__img" src="assets/images/works/phone-line.png" alt="phone">
-                    <p class="work__text">call</p>
+                    <div class="work__img">
+                      <img src="assets/images/works/phone-line.png" alt="phone">
+                    </div>
+                    <span class="work__text">call</span>
                   </div>
                 </div>
               </div>
@@ -94,8 +98,10 @@
                 <div class="work__inner">
                   <div class="normalize"></div>
                   <div class="work__wrap">
-                    <img class="work__img" src="assets/images/works/pencil-ruler-line.png" alt="phone">
-                    <p class="work__text">measure</p>
+                    <div class="work__img">
+                      <img src="assets/images/works/pencil-ruler-line.png" alt="phone">
+                    </div>
+                    <span class="work__text">measure</span>
                   </div>
                 </div>
               </div>
@@ -103,8 +109,10 @@
                 <div class="work__inner">
                   <div class="normalize"></div>
                   <div class="work__wrap">
-                    <img class="work__img" src="assets/images/works/file-list-3-line.png" alt="phone">
-                    <p class="work__text">plan</p>
+                    <div class="work__img">
+                      <img src="assets/images/works/file-list-3-line.png" alt="phone">
+                    </div>
+                    <span class="work__text">plan</span>
                   </div>
                 </div>
               </div>
@@ -112,8 +120,10 @@
                 <div class="work__inner">
                   <div class="normalize"></div>
                   <div class="work__wrap">
-                    <img class="work__img" src="assets/images/works/building-line.png" alt="phone">
-                    <p class="work__text">work</p>
+                    <div class="work__img">
+                      <img src="assets/images/works/building-line.png" alt="phone">
+                    </div>
+                    <span class="work__text">work</span>
                   </div>
                 </div>
               </div>
@@ -132,17 +142,17 @@
           <div class="works__content">
 
             <div class="works__img-wrap">
-              <img class="works__photo" src="assets/images/works/first.jpg" alt="">
+              <img src="assets/images/works/first.jpg" alt="">
             </div>
             <div class="works__img-wrap">
-              <img class="works__photo" src="assets/images/works/second.jpg" alt="">
+              <img src="assets/images/works/second.jpg" alt="">
             </div>
 
             <div class="works__img-wrap">
-              <img class="works__photo" src="assets/images/works/third.jpg" alt="">
+              <img src="assets/images/works/third.jpg" alt="">
             </div>
             <div class="works__img-wrap">
-              <img class="works__photo" src="assets/images/works/fourth.jpg" alt="">
+              <img src="assets/images/works/fourth.jpg" alt="">
             </div>
 
           </div>
@@ -159,9 +169,10 @@
               <div class="reviews__item" id="first_slide">
                 <div class="reviews__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore tat magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation ullamcorp suscipit lobortis nisl ut aliquipex ea commodo consequat.</div>
                 <div class="reviews__sign-wrap">
-                  <img class="reviews__sign" src="assets/images/reviews/2.png" alt="">
+                  <img src="assets/images/reviews/2.png" alt="">
                 </div>
-                <div class="reviews__author">Deniel Croft
+                <div class="reviews__author">
+                  <div class="author">Deniel Croft</div>
                   <div class="reviews__job">Creative Designer, Levy</div>
                 </div>
               </div>
@@ -171,9 +182,10 @@
               <div class="reviews__item" id="second_slide">
                 <div class="reviews__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore tat magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation ullamcorp suscipit lobortis nisl ut aliquipex ea commodo consequat.</div>
                 <div class="reviews__sign-wrap">
-                  <img class="reviews__sign" src="assets/images/reviews/2.png" alt="">
+                  <img src="assets/images/reviews/2.png" alt="">
                 </div>
-                <div class="reviews__author">Martin Ours
+                <div class="reviews__author">
+                  <div class="author">Martin Ours</div>
                   <div class="reviews__job">Designer, Once</div>
                 </div>
               </div>
@@ -278,19 +290,19 @@
                       <h3 class="contacts__form__title">Leave a message</h3>
                     </div>
                     <div class="form__item">
-                      <input type="text" placeholder="Name*" id="name__input" required/>
+                      <input class="name__input" name="name" type="text" placeholder="Name*" id="name__input" required/>
                     </div>
                     <div class="form__item">
-                      <input type="email" placeholder="Email*" id="email__input" required/>
+                      <input class="email__input" name="email" type="email" placeholder="Email*" id="email__input" required/>
                     </div>
                     <div class="form__item">
-                      <input type="tel" placeholder="Phone*" id="phone__input" required/>
+                      <input class="phone__input" name="phone" type="tel" placeholder="Phone*" id="phone__input" required/>
                     </div>
                     <div class="form__item">
-                      <textarea name="messagebox" id="message__input" placeholder="Message*" required></textarea>
+                      <textarea class="message__input" name="messagebox" id="message__input" placeholder="Message*" required></textarea>
                     </div>
                     <div class="form__item">
-                      <input type="submit" id="contacts__submit" value="Send"> 
+                      <input class="contacts__submit" type="submit" id="contacts__submit" value="Send"> 
                     </div>
                   </div>
                 </form>
@@ -335,7 +347,7 @@
         <div class="container">
           <div class="footer__inner">
             <div class="footer__logo">
-              <a class="footer__logo__link" href="#intro">sky realestate</a>
+              <a class="footer__logo__link" href="https://matthew4jesus.github.io/My-Project-Site/">sky realestate</a>
             </div>
             <ul class="footer__nav__list">
               <li><a class="footer__nav-link" href="#about">About us</a></li>
@@ -346,10 +358,18 @@
               <li><a class="footer__nav-link" href="#contacts">Contacts</a></li>
             </ul>
             <div class="social">
-              <a href="https://www.facebook.com/" target="_blank"><i class="sprite sprite-1"></i></a>
-              <a href="https://www.instagram.com/" target="_blank"><i class="sprite sprite-2"></i></a>
-              <a href="https://twitter.com/" target="_blank"><i class="sprite sprite-3"></i></a>
-              <a href="https://www.linkedin.com/" target="_blank"><i class="sprite sprite-4"></i></a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="sprite sprite-1"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="sprite sprite-2"></i>
+              </a>
+              <a href="https://twitter.com/" target="_blank">
+                <i class="sprite sprite-3"></i>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <i class="sprite sprite-4"></i>
+              </a>
             </div>
           </div>
         </div>
