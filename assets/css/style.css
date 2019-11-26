@@ -1322,15 +1322,14 @@ form{
 	}
 
 	/* Footer */
-v
 
 	.footer__logo {
-		font-size: 18px;
-		margin-right: 35px;
+		font-size: 14px;
 	}
 
 	.footer__nav-link {
 		font-size: 13px;
+		margin: 0 8px;
 	}
 
 	.social {
