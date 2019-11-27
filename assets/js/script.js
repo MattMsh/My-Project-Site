@@ -44,3 +44,6 @@ $('.footer__nav-link').on( 'click', function(){
     }
     return false;
 });
+
+
+
