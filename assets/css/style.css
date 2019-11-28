@@ -153,7 +153,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	padding:0;
 	margin:0;
-	
+}
+
+.menu__box li {
+	margin: 0px 15px;
 }
 
 .menu__item
@@ -161,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	width: 100%;
 	vertical-align: bottom;
-	margin: 0px 15px;
 	position: relative;
 
 	font-size: 14px;
@@ -1116,13 +1118,17 @@ form{
 	        justify-content: space-between;
 }
 
+.social a {
+	width: 100%;
+	margin-right: 15px;
+}
+
 .sprite {
     background-image: url(../images/social/spritesheet.png);
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
     background-repeat: no-repeat;
     display: block;
-    margin-right: 15px;
 }
 
 .sprite:hover{
