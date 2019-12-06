@@ -1161,8 +1161,12 @@ form{
 
 
 /* Copyright */
+.copyright__section {
+	padding: 100px 0;
+}
 
-.copyright{
+
+.copyright {
 	opacity: 0.7;
 	color: #171717;
 	font-family: 'Lato', sans-serif;
